@@ -5,8 +5,6 @@ export class CreateAtlanticTeams1608997707786 implements MigrationInterface {
   public async up(queryRunner: QueryRunner): Promise<void> {
     const division: any = await getRepository(Division).findOne({ where: { name: 'Atlantic' } })
 
-    console.log('DIVISION', division)
-
     await queryRunner.query(`
       INSERT INTO teams (name, nick_name, arena, location, titles, logo, conference_id, division_id)
       VALUES

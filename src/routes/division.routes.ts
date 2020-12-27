@@ -2,8 +2,11 @@ import { Router } from 'express'
 import { getCustomRepository, getRepository } from 'typeorm'
 import Division from '../models/Division'
 import TeamsRepository from '../repositories/TeamsRepository'
+import authentication from '../middlewares/authentication'
 
 const divisionRouter = Router()
+
+divisionRouter.use(authentication)
 
 divisionRouter.get('/', async (request, response) => {
   const divisionRepository = getRepository(Division)

@@ -1,8 +1,11 @@
 import { Router } from 'express'
 import { getRepository } from 'typeorm'
 import Team from '../models/Team'
+import authentication from '../middlewares/authentication'
 
 const teamRouter = Router()
+
+teamRouter.use(authentication)
 
 teamRouter.get('/', async (request, response) => {
   const teamRepository = getRepository(Team)

@@ -2,8 +2,11 @@ import { Router } from 'express'
 import { getCustomRepository, getRepository } from 'typeorm'
 import Conference from '../models/Conference'
 import DivisionsRepository from '../repositories/DivisionsRepository'
+import authentication from '../middlewares/authentication'
 
 const conferenceRouter = Router()
+
+conferenceRouter.use(authentication)
 
 conferenceRouter.get('/', async (request, response) => {
   const conferenceRepository = getRepository(Conference)

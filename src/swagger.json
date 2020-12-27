@@ -1,0 +1,25 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "NBA API"
+  },
+  "host": "http://localhost:3000",
+  "paths": {
+    "/users": {
+      "get": {
+        "summary": "",
+        "description": "",
+        "produces": "application/json",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  }
+
+
+
+}
