@@ -6,7 +6,7 @@
   - Creating new users;
   - List all teams of NBA;
   - List all teams of a conference;
-  - List all temas of a division;
+  - List all teams of a division;
   - List all conferences;
   - List all divisions;
   - List divisions of a conference.
