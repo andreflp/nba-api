@@ -17,7 +17,7 @@ After setting up the database, you must run the migrations to create all initial
 
 ```sh
 $ yarn
-$ yarn typeorm migration:run
+$ yarn typeorm migration:run -t=each
 $ yarn dev:server
 ```
 
