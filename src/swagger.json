@@ -6,7 +6,19 @@
   },
   "host": "http://localhost:3000",
   "paths": {
-    "/users": {
+    "/teams": {
+      "get": {
+        "summary": "",
+        "description": "",
+        "produces": "application/json",
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/teams/:name": {
       "get": {
         "summary": "",
         "description": "",
@@ -19,7 +31,4 @@
       }
     }
   }
-
-
-
 }
