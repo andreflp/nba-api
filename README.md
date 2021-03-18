@@ -21,7 +21,7 @@ $ yarn typeorm migration:run -t=each
 $ yarn dev:server
 ```
 
-Another way to setting up is using docker and docker-compose to creating two containers, for the database and appss:
+Another way to setting up is using docker and docker-compose to creating two containers, for the database and apps:
 
 ```sh
 $ docker-compose up -d
